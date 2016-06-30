@@ -1,0 +1,220 @@
+sup {
+    font-size: 0.5em;
+    vertical-align: top;
+}
+
+html {
+	font-family:"Montserrat";
+	font-size: 10px;
+}
+
+html, body {
+	background: linear-gradient(to bottom, #455a64, #263238) no-repeat;
+	min-height: 100vh;
+}
+body {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+button {border:none;}
+
+
+header {
+	align-items: center;
+	background: rgba(0,0,0,0.2);
+	color:#fff;
+	display:flex;
+	height:76px;
+	flex-grow:0;
+	flex-shrink:0;
+	justify-content: space-between;
+	padding:20px;
+}
+	header span,
+	header strong {
+		display: inline-block;
+	}
+
+	header strong {
+		font-size:2.2rem;
+		text-transform: uppercase;
+	}
+
+	header span {
+		font-size: 3.6rem;
+	}
+
+main {
+	height: 100%;
+	flex-grow: 1;
+}
+
+.card-section, .card-slips, .bottom-review {
+	padding:25px;
+	max-width: 400px;
+}
+	.credit-card, .visa-slip, .mc-slip, .add-button, .review-button {box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);}
+	.credit-card {
+		background: linear-gradient(to bottom, #1e88e5, #1565c0);
+		border-radius: 15px;
+		min-width:275px;
+		padding:0px 15px;
+	}
+		.credit-card p, .credit-card strong, .credit-card span {color:#fff;}
+
+		.top-card {
+			align-items: center;
+			display:flex;
+			justify-content: space-between;
+			min-height:60px;
+		}
+		.top-card #name-card {
+			display:inline-block;
+			font-family:"Open Sans";
+			font-size:1.8rem;
+			opacity:0.5;
+		}
+		.middle-card {
+			display:flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+		}
+			.middle-card strong {
+				width:100%;
+				font-size:1.4rem;
+				margin:0px 0px 10px 0px;
+				text-transform: uppercase;
+			}
+			.middle-card span {
+				font-family:"Share Tech Mono";
+				font-size:2.7rem;
+			}
+			.card-input {
+				background:transparent;
+				border:none;
+				color:#fff;
+				font-family: "Share Tech Mono";
+				font-size:2.7rem;
+				text-align: center;
+				width:100%;
+			}
+		.bottom-card {
+			align-items: center;
+			display: flex;
+			justify-content: space-around;
+			min-height:70px;
+			text-align: center;
+			text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+		}
+			.bottom-card p {
+				align-items: center;
+				display:flex;
+				justify-content: center;
+				width:50%;
+			}
+			.bottom-card p strong {
+				display: inline-block;
+				font-size:1.4rem;
+				margin:0px 10px;
+				text-transform: uppercase;
+			}
+			.bottom-card p em{
+				display: inline-block;
+				font-family:"Share Tech Mono";
+				font-size:2.4rem;
+				font-style: normal;
+			}
+
+.card-slips {text-transform: uppercase;}
+	.visa-slip, .mc-slip {
+		border-radius: 5px;
+		list-style: none;
+		overflow: hidden;
+	}
+	.visa-slip li, .mc-slip li {
+		align-items: center;
+		display:flex;
+		justify-content: space-between;
+		padding-right:10px;
+		text-shadow: 2px 2px 2px rgba(0,0,0,0.2)
+	}
+	.visa-slip {
+		background:
+			url(../imgs/ic_visa_bg_66px.svg) top right no-repeat,
+		 	linear-gradient(to bottom, #1e88e5, #1565c0);
+	}
+			.visa-top-left, .visa-top-middle, .visa-top-right, .mc-bottom-left, .mc-bottom-middle, .mc-bottom-right {
+				color:#fff;
+				display:inline-block;
+			}
+
+			.visa-top-left, .mc-bottom-left {
+				align-items: center;
+				color:transparent;
+				min-width:80px;
+				height:40px;
+			}
+			.visa-top-left{
+				background:
+					url(../imgs/ic_visa_24px.svg) center center no-repeat,
+					#fff;
+				padding:22px 40px;
+			}
+			.visa-top-middle, .mc-bottom-middle {
+				align-items: center;;
+				display:flex;
+				font-size:1.4rem;
+			}
+				.visa-top-middle > em, .mc-bottom-middle > em {margin-left:5px;}
+				.visa-top-middle > em, .visa-top-right, .mc-bottom-middle > em, .mc-bottom-right {
+					font-family: "Share Tech Mono";
+					font-style: normal;
+					font-size:2rem;
+				}
+
+				.visa-top-right, .mc-bottom-right { font-size:2.7rem;}
+
+		.mc-slip {
+			background:
+				url(../imgs/ic_mastercard_bg_132px.svg) top right no-repeat,
+		 		linear-gradient(to bottom, #00ACC1, #00838F);
+				margin-top:25px;
+		}
+			.mc-bottom-left {
+				background:
+					url(../imgs/ic_mastercard_48px.svg) center center no-repeat,
+					#fff;
+					padding:22px 15px;
+			}
+
+	.bottom-review {
+		display:flex;
+		flex-grow:0;
+		flex-shrink:0;
+		height:96px;
+		justify-content: space-between;
+	}
+		.add-button {
+			align-items: center;
+			background:
+				url(../imgs/ic_add_circle_48px.svg) center center no-repeat,
+				#4CAF50;
+			border-radius: 100%;
+			color:transparent;
+			display:flex;
+			justify-content: center;
+			min-height: 45px;
+			min-width: 45px;
+		}
+		.review-button {
+			align-items:center;
+			background:#2196F3;
+			color:#fff;
+			display:flex;
+			font-size:1.8rem;
+			justify-content: center;
+			padding:10px 60px;
+			text-transform: uppercase;
+		}
